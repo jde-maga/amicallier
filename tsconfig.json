@@ -1,5 +1,14 @@
 {
   "compilerOptions": {
-    "esModuleInterop": true
+    "types": ["jest", "node"],
+    "esModuleInterop": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@constants/*": ["./constants/*"],
+      "@utils/*": ["./utils/*"],
+      "@customTypes/*": ["./types/*"],
+      "@models/*": ["./models/*"],
+      "@routes/*": ["./routes/*"]
+    }
   }
 }
